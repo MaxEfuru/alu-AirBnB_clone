@@ -4,6 +4,9 @@
   border-radius: 4px;
   height: 70px;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .filters button {
@@ -16,6 +19,8 @@
   opacity: 1;
   transition: opacity 0.2s;
   width: 20%;
+  margin-top: calc((70px - 48px)/2);
+  margin-left: calc(100% - 20% - 30px );
 }
 
 .filters button:hover {
@@ -33,13 +38,6 @@
 .filters button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
-}
-
-.filters {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
 }
 
 .locations {
@@ -62,14 +60,4 @@ h4 {
   font-weight: 400;
   font-size: 14px;
   margin-top: 0;
-}
-
-button {
-  background-color: #333333;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  margin-left: 20px;
-  cursor: pointer;
 }
