@@ -1,49 +1,105 @@
 
-
-/* styles/6-filters.css */
-.filter {
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 20px;
+.filters {
+  background-color: #FFF;
+  border: 1px solid #DDD;
+  border-radius: 4px;
+  height: 70px;
+  width: 100%;
+  display: flex;
 }
 
-.filter h3 {
-  margin: 0;
-  margin-bottom: 10px;
-  font-size: 18px;
-}
-
-.filter button {
-  background-color: #eee;
+.filters button {
+  background-color: #FF5A5F;
   border: none;
   border-radius: 4px;
-  padding: 5px 10px;
-  cursor: pointer;
+  color: #FFF;
+  font-size: 18px;
+  height: 48px;
+  opacity: 1;
+  transition: opacity 0.2s;
+  width: 20%;
+  margin-top: calc((70px - 48px)/2);
+}
+
+.filters button:hover {
+  opacity: 0.9;
+}
+
+.filters button:active {
+  opacity: 0.8;
+}
+
+.filters button:focus {
+  outline: none;
+}
+
+.filters button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .popover {
-  display: none;
-  position: absolute;
-  top: 30px;
-  background-color: #fafafa;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 10px;
-  list-style: none;
-  width: 200px;
-  z-index: 1;
+    display: none;
+    background-color: #FAFAFA;
+    border: 1px solid #DDDDDD;
+    border-spacing: 200px;
+    border-radius: 4px;
+    width: 100%;
+    margin-left: -45px;
+    margin-top: 4px;
+    padding-left: 20px;
+    z-index: 1000000000;
 }
 
-.popover li {
-  margin-bottom: 5px;
+.locations {
+    height: 100%;
+    width: 25%;
+    border-right: 1px solid #DDDDDD;
+    display: flex;
+    flex-direction: column;
+    margin-left: 45px;
 }
 
-.popover h4 {
-  margin-top: 0;
-  margin-bottom: 5px;
-  font-size: 16px;
+.amenities {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 45px;
+    margin-right: 20%;
 }
- 
-.filter:hover .popover {
-  display: block;
+
+.locations:hover .popover {
+    display: inline-block;
+    padding-right: 25px;
+}
+
+.amenities:hover .popover {
+    display: inline-block;
+    padding-right: 200px;
+}
+
+ul {
+    padding: 2px;
+    padding-bottom: 10px;
+    list-style-type: none;
+}
+
+li {
+    padding-bottom: 2px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+h3 {
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 7px;
+    margin-bottom: 10px;
 }
