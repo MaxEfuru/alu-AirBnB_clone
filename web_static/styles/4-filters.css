@@ -16,6 +16,8 @@
   opacity: 1;
   transition: opacity 0.2s;
   width: 20%;
+  margin-top: calc((70px - 48px)/2);
+  margin-left: calc(100% - 20% - 30px );
 }
 
 .filters button:hover {
