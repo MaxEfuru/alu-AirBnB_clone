@@ -1,0 +1,85 @@
+/* styles/4-common.css */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* styles/3-header.css */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* styles/3-footer.css */
+footer {
+  background-color: #eee;
+  padding: 10px;
+  text-align: center;
+}
+
+/* styles/6-filters.css */
+.filter {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+}
+
+.filter h3 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.filter button {
+  background-color: #eee;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.popover {
+  display: none;
+  position: absolute;
+  top: 30px;
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  list-style: none;
+  width: 200px;
+  z-index: 1;
+}
+
+.popover li {
+  margin-bottom: 5px;
+}
+
+.popover h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+ 
+.filter:hover .popover {
+  display: block;
+}
